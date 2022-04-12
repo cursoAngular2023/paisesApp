@@ -20,8 +20,8 @@ export class PorPaisComponent {
     console.log(this.termino);
     this.PaisService.buscarPais( this.termino )
       .subscribe({
-        next: (data) => {
-          console.log( data);
+        next: ( paises ) => {
+          console.log( paises );
       },
        error: (err) => {
         console.log('Error');
